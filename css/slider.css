@@ -1,0 +1,64 @@
+/*--------- slider ---------*/
+#slide {
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	height:auto;
+	/*height:1250px;*/
+}
+.slider {
+	width:100%;
+	height:auto;
+}
+.items {
+	display:none;
+}
+.pic {
+	width:100%;
+}
+
+.pagination {
+	
+}
+.pagination li {
+	float:left;
+}
+.pagination a {
+	display:inline-block;
+}
+.pagination li span {
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	z-index:999;
+}
+.pagination li.current span, .pagination li:hover span {
+	display:block;
+	background:none;
+
+}
+.next {
+	position:absolute;
+	top:50%;
+	right:-1%;
+	width:13px;
+	height:23px;
+	background:url(../images/gallery/arrows/next.png) 0 0 no-repeat;
+	display:block;
+	z-index:999;
+}
+.prev {
+	position:absolute;
+	top:50%;
+	left:-1%;
+	width:13px;
+	height:23px;
+	background:url(../images/gallery/arrows/prev.png) 0 0 no-repeat;
+	display:block;
+	z-index:999;
+}
+.next:hover, .prev:hover {
+	background-position:0 bottom;
+}
